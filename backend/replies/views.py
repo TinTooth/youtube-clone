@@ -6,9 +6,10 @@ from .models import Reply
 from .serializer import ReplySerializer
 from comments.models import Comment
 from comments.serializers import CommentSerializer
+from django.shortcuts import get_object_or_404
 # Create your views here.
 
-@api_view(['GET', 'POST'])
+@api_view(['GET', 'POST','PUT'])
 @permission_classes([IsAuthenticated])
 def comment_replies_details(request, pk):
 
@@ -21,4 +22,12 @@ def comment_replies_details(request, pk):
         if serializer.is_valid():
             serializer.save(user= request.user, comment_id = pk)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST) 
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    if request.method == 'PUT':
+        reply = get_object_or_404(Reply,pk=pk)
+        serializer = ReplySerializer(reply,data = request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
