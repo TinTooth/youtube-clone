@@ -189,6 +189,14 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "update_reply",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			]
 		}
