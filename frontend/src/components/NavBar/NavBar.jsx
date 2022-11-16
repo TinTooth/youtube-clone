@@ -3,8 +3,9 @@ import { useContext } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
 import "./NavBar.css";
+import SearchBar from "../SearchBar/SearchBar";
 
-const Navbar = () => {
+const Navbar = ({setSearch,search}) => {
   const { logoutUser, user } = useContext(AuthContext);
   const navigate = useNavigate();
   return (
@@ -14,6 +15,9 @@ const Navbar = () => {
           <Link to="/" style={{ textDecoration: "none", color: "white" }}>
             <b>React/Django JWT</b>
           </Link>
+        </li>
+        <li>
+          <SearchBar search = {search} setSearch={setSearch}></SearchBar>
         </li>
         <li>
           {user ? (

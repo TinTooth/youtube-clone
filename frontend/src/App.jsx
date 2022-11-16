@@ -16,13 +16,13 @@ import Navbar from "./components/NavBar/NavBar";
 import PrivateRoute from "./utils/PrivateRoute";
 
 function App() {
-  const [search,setSearch] = useState('world of warcraft')
+  const [search,setSearch] = useState('decorating cookies')
   
 
 
   return (
     <div>
-      <Navbar />
+      <Navbar search={search} setSearch={setSearch}/>
       <Routes>
         <Route path="/" element={<SearchPage search = {search}/>}/>
         <Route path="/register" element={<RegisterPage />} />
