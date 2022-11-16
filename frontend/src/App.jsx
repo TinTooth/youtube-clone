@@ -1,5 +1,8 @@
 // General Imports
 import { Routes, Route } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import axios from "axios";
+
 import "./App.css";
 
 // Pages Imports
@@ -13,11 +16,15 @@ import Navbar from "./components/NavBar/NavBar";
 import PrivateRoute from "./utils/PrivateRoute";
 
 function App() {
+  const [search,setSearch] = useState('world of warcraft')
+  
+
+
   return (
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<SearchPage />}/>
+        <Route path="/" element={<SearchPage search = {search}/>}/>
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
       </Routes>
