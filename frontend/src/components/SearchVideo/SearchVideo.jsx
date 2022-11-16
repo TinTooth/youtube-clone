@@ -1,11 +1,13 @@
+import './SearchVideo.css'
+
 const SearchVideo = ({item}) => {
     return (
-        <div>
-            <div>{item.snippet.title}</div>
+        <>
             <div>
                 <img src={item.snippet.thumbnails.medium.url} alt="thumbnail" />
             </div>
-        </div>
+            <div className='title'>{item.snippet.title.replace(/(&quot\;)/g,"\"")}</div>
+        </>
 
     );
 }

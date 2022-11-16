@@ -1,0 +1,11 @@
+.video-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 360px;
+    background-color: aqua;
+}
+
+.title {
+    width: 320px;
+}

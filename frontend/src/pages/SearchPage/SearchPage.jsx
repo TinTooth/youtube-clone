@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import SearchVideo from "../../components/SearchVideo/SearchVideo";
+import "./SearchPage.css"
 
 
 const SearchPage = ({search}) => {
@@ -20,12 +21,13 @@ const SearchPage = ({search}) => {
     const handleTempClick = () => {console.log(searchResults)}
 
     return (
-      <div className="thumbnail-container" onClick={handleTempClick}>Search Page
+      <div className="thumbnail-container" onClick={handleTempClick}>
           {searchResults.map((item,i)=> {
             return(
-              <div key = {i}>
+              <div className="video-container" key = {i}>
               <SearchVideo item = {item}/>
-            </div>
+              </div>
+            
           )
         })}
       </div>
