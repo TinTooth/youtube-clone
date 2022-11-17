@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import SearchVideo from "../../components/SearchVideo/SearchVideo";
-import "./SearchPage.css"
+import "./SearchPage.css";
+import VideoCard from '../../components/VideoCard/VideoCard.jsx'
 
 
 const SearchPage = ({search}) => {
@@ -25,7 +25,7 @@ const SearchPage = ({search}) => {
           {searchResults.map((item,i)=> {
             return(
               <div className="video-container" key = {i}>
-              <SearchVideo item = {item}/>
+              <VideoCard item = {item}/>
               </div>
             
           )

@@ -1,4 +1,4 @@
-import './SearchVideo.css'
+import './VideoCard.css'
 
 const SearchVideo = ({item}) => {
     return (
