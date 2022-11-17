@@ -9,3 +9,9 @@
 .title {
     width: 320px;
 }
+
+.related {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+}

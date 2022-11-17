@@ -3,10 +3,9 @@ const VideoPlayer = ({id}) => {
         <iframe 
         id="ytplayer"
          type="text/html"
-         width="640" 
-         height="360"
-        src={`https://www.youtube.com/embed/${id}`}
-        frameborder="0">
+         width="854" 
+         height="480"
+        src={`https://www.youtube.com/embed/${id}`}>
         </iframe>
 
      );

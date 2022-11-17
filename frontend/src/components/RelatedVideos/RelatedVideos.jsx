@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import VideoCard from "../VideoCard/VideoCard.jsx"
 import axios from "axios";
+import "./RelatedVideos.css"
 
 
 
@@ -22,11 +23,11 @@ const RelatedVideos = ({vid}) => {
     return ( 
 
 
-        <div className="video-container">
+        <div className="video-container-related">
             {relatedVideos.map((item,i)=> {
             return(
-              <div className="video-container" key = {i}>
-              <VideoCard item = {item}/>
+              <div className="video-container-related" key = {i}>
+              <VideoCard item = {item} displayType = {2}/>
               </div>
           )
         })}

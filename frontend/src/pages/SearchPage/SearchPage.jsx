@@ -30,7 +30,7 @@ const SearchPage = ({search}) => {
           {searchResults.map((item,i)=> {
             return(
               <div className="video-container" key = {i}>
-              <VideoCard item = {item}/>
+              <VideoCard item = {item} displayType = {1}/>
               </div>
             
           )

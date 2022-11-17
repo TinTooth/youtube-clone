@@ -1,7 +1,7 @@
 import './VideoCard.css'
 import { useNavigate } from "react-router-dom";
 
-const SearchVideo = ({item}) => {
+const SearchVideo = ({item, displayType}) => {
     const navigate = useNavigate()
 
     const handleClick = () => {
@@ -9,16 +9,28 @@ const SearchVideo = ({item}) => {
     }
 
 
-    return (
+    return displayType === 1? (
         <div onClick={handleClick}>
             <div>
                 <img src={item.snippet.thumbnails.medium.url} alt="thumbnail" />
             </div>
             <div className='title'>{item.snippet.title.replace(/(&quot\;)/g,"\"")}</div>
-            <h3> Channel: {item.snippet.channelTitle}</h3>
+            <h3> {item.snippet.channelTitle}</h3>
         </div>
 
-    );
+    ): displayType === 2? (
+        <div onClick={handleClick}>
+            <div className="related">
+                <div>
+                    <img src={item.snippet.thumbnails.default.url} alt="thumbnail" />
+                </div>
+                <div className="info">
+                    <h4>{item.snippet.channelTitle}</h4>
+                    <div className='title'>{item.snippet.title.replace(/(&quot\;)/g,"\"")}</div>
+                </div>
+            </div>
+        </div>
+    ): null ;
 }
  
 export default SearchVideo;
