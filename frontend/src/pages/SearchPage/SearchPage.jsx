@@ -9,6 +9,7 @@ const SearchPage = ({search}) => {
 
   useEffect( () =>{
     getSearchResults();
+    console.log('useeffect searchpage')
     },[search]) 
     
     
