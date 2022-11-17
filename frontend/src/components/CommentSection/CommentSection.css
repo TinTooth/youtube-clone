@@ -5,3 +5,11 @@
     justify-content: center;
     margin: auto;
 }
+
+.comment-container{
+    width: 1350px;
+    background-color: paleturquoise;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}

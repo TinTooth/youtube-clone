@@ -1,0 +1,26 @@
+.comment{
+    width: 1350px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.username {
+    justify-self: left;
+    padding-left: 20px;
+}
+
+.buttons {
+   display: flex;
+   flex-wrap: nowrap; 
+}
+
+.reply-btn {
+    justify-self: flex-end;
+}
+
+.text {
+    padding: 5px;
+    padding-left: 50px;
+}
