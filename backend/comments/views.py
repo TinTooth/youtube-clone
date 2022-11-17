@@ -20,6 +20,7 @@ def get_all_comments(request, pk):
 @permission_classes([IsAuthenticated])
 def create_comment(request):
     if request.method == 'POST':
+        print(request.data)
         serializer = CommentSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save(user = request.user)
