@@ -1,6 +1,6 @@
 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
 }
 
@@ -33,3 +33,4 @@ li {
   cursor: pointer;
   font-size: 2rem;
 }
+

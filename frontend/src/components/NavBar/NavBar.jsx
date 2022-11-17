@@ -8,15 +8,16 @@ import SearchBar from "../SearchBar/SearchBar";
 const Navbar = ({setSearch,search}) => {
   const { logoutUser, user } = useContext(AuthContext);
   const navigate = useNavigate();
+
   return (
     <div className="navBar">
       <ul>
         <li className="brand">
           <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-            <b>React/Django JWT</b>
+            <b>Youtube Clone</b>
           </Link>
         </li>
-        <li>
+        <li className="searchbar">
           <SearchBar search = {search} setSearch={setSearch}></SearchBar>
         </li>
         <li>
