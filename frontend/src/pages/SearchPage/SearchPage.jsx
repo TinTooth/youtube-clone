@@ -4,13 +4,17 @@ import "./SearchPage.css";
 import VideoCard from '../../components/VideoCard/VideoCard.jsx'
 
 
+
 const SearchPage = ({search}) => {
     const [searchResults,setSearchResults] = useState([]);
+   
 
   useEffect( () =>{
     getSearchResults();
     console.log('useeffect searchpage')
     },[search]) 
+
+  
     
     
 
