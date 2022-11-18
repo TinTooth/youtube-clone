@@ -1,6 +1,5 @@
 .comment-section{
     width: 1350px;
-    background-color: yellow;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -12,4 +11,5 @@
     display: flex;
     justify-content: center;
     margin: auto;
+   
 }

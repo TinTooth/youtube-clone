@@ -1,8 +1,8 @@
 import "./CommentSection.css"
 import axios from "axios";
 import { useEffect, useState } from "react";
-import CommentForm from "./CommentForm/CommentForm";
-import Comment from "./Comment/Comment";
+import CommentForm from "../CommentForm/CommentForm";
+import Comment from "../Comment/Comment";
 
 
 

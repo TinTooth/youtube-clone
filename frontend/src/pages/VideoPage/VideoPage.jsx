@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import RelatedVideos from "../../components/RelatedVideos/RelatedVideos";
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
 import "./VideoPage.css"
-import CommentSection from "../../components/CommentSection/CommentSection";
+import CommentSection from "../../components/CommentSection/CommentSection/CommentSection";
 import axios from "axios";
 import ApiKeys from "../../utils/ApiKeys";
 import { useEffect, useState } from "react";
