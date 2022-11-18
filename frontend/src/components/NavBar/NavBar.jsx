@@ -13,7 +13,7 @@ const Navbar = ({setSearch,search}) => {
     <div className="navBar">
         <div className="brand">
           <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-            <b>Youtube Clone</b>
+            <h3>Youtube Clone</h3>
           </Link>
         </div>
         <div className="searchbar">
