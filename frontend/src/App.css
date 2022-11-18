@@ -17,21 +17,22 @@ p {
   font-size: 20px;
 }
 
-/* button {
-  background-color: transparent;
-  border: 2px solid steelblue;
-  color: steelblue;
-  font-size: 1rem;
-  font-family: inherit;
-  max-width: 100px;
-  padding: 0.5rem 0.5rem;
+button {
+  background-color:#bbcacf;
+  padding: 4px;
+  font-size: 25px;
+  border: 3.5px solid #bbcacf;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #181e21;
+  text-align: center;
+  width: 125px;
 }
 
 button:hover {
-  cursor: pointer;
-  color: white;
-  background-color: steelblue;
-} */
+  background-color:#181e21 ;
+  color:#bbcacf 
+}
 
 .container {
   margin: 0 auto;
@@ -61,4 +62,33 @@ button:hover {
 
 body{
   background-color: #181e21; 
+}
+
+.form {
+  color: #bbcacf;
+  font-size: larger;
+
+}
+
+.form input:focus{
+  outline: none;
+  
+}
+
+.form input {
+  padding: 15px;
+  background-color: #ccdee4;
+  font-size: larger;
+}
+
+.form label {
+  font-size: larger;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:visited {
+  color: #bbcacf;
 }

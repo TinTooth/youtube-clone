@@ -1,13 +1,13 @@
 .thumbnail-container {
     display: flex;
-    background-color: #8ED8F3;
+    /* background-color: #8ED8F3; */
     flex-wrap: wrap;
     margin: auto;
     justify-content: center;
     width: 1200px;
     gap: 10px;
     padding-top: 10px;
-    box-shadow: 0px 10px 20px 10px rgba(27, 77, 95, 0.3);
+    /* box-shadow: 0px 10px 20px 10px rgba(27, 77, 95, 0.3); */
 }
 
 .video-container{
@@ -15,7 +15,7 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 360px;
-    background-color: rgb(241, 241, 241);
+    background-color: #bbcacf;
     padding-top: 10px;
-    box-shadow: 0px 10px 20px 10px rgba(42, 106, 130, 0.4);
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.4);
 }

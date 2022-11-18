@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgba(42, 106, 130);
+    background-color: #181e21;
     width: 100%;
-    border: 4px solid #8ED8F3;
+    border: 4px solid #bbcacf;
 }
 
 .comment-form form {
@@ -14,9 +14,9 @@
 }
 
 .post-btn {
-    background-color:#8ED8F3;
-    border: 3.5px solid #8ED8F3;
-    color: #2A6A82;
+    background-color:#bbcacf ;
+    border: 3.5px solid #bbcacf ;
+    color: #181e21 ;
     margin-left: 50px;
     padding: 15px;
     font-size: 25px;
@@ -25,8 +25,8 @@
 }
 
 .post-btn:hover {
-    background-color:#2A6A82 ;
-    color:#8ED8F3 ;
+    background-color:#181e21 ;
+    color:#bbcacf  ;
 }
 
 textarea {
@@ -46,5 +46,5 @@ textarea:focus{
 }
 
 .comment-form h1 {
-    color:#8ED8F3 ;
+    color:#bbcacf ;
 }

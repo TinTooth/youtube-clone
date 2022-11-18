@@ -14,7 +14,7 @@ const SearchVideo = ({item, displayType}) => {
             <div>
                 <img src={item.snippet.thumbnails.medium.url} alt="thumbnail" />
             </div>
-            <h3> {item.snippet.channelTitle}</h3>
+            <h2> {item.snippet.channelTitle}</h2>
             <div className='title'>{item.snippet.title.replace(/(&quot\;)/g,"\"")}</div>
         </div>
 

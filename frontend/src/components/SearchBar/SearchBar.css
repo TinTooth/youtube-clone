@@ -1,17 +1,17 @@
 .search-input {
-    background-color: #8ED8F3;
-    color: #2A6A82;
+    background-color: #bbcacf;
+    color: #181e21;
     font-size: 25px;
     width: 400px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     padding-left: 10px;
-    border: 3.5px solid #8ED8F3;
+    border: 3.5px solid #bbcacf;
 
 }
 
 .search-input:focus {
-   outline: #2A6A82 ;
+   outline: #181e21 ;
 }
 
 form{
@@ -20,20 +20,14 @@ form{
 }
 
 .search-btn {
-    background-color:#8ED8F3;
-    padding: 4px;
-   font-size: 25px;
-   border: 3.5px solid #8ED8F3;
-   cursor: pointer;
-   border-top-right-radius: 15px;
-   border-bottom-right-radius: 15px;
+   
+   border-top-left-radius: 0px;
+   border-bottom-left-radius: 0px;
    border-left: 1px solid;
-    color: #2A6A82;
-    text-align: center;
     width: 125px;
 }
 
 .search-btn:hover {
-    background-color:#2A6A82 ;
-    color:#8ED8F3 ;
+    background-color:#181e21 ;
+    color:#bbcacf;
 }
