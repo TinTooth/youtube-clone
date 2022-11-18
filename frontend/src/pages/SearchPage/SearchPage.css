@@ -11,11 +11,12 @@
 }
 
 .video-container{
+    color: #bbcacf;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 360px;
-    background-color: #bbcacf;
+    background-color: #181e21;
     padding-top: 10px;
     box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.4);
 }

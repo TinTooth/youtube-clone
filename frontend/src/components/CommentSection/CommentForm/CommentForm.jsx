@@ -33,10 +33,17 @@ const CommentForm = ({vid, getVideoComments}) => {
     return ( 
         <div className="comment-form">
             <h1>COMMENTS</h1>
-            <form onSubmit={handleSubmit}>
+            { user ? (
+
+                
+                <form onSubmit={handleSubmit}>
                 <textarea name = 'comment' value = {formData.comment} onChange ={handleInputChange} />
                 <button className="post-btn">Post</button>
             </form>
+            ) : (
+                <h2>Please Login to Comment on Video</h2>
+            )
+            }
 
         </div>
      );

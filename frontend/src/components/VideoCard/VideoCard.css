@@ -3,24 +3,31 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 360px;
-    
+    cursor: pointer;
 }
 
 .title {
     width: 320px;
     padding: 4px;
+    color: #9facb0;
 }
 
 .related {
+    cursor: pointer;
     display: flex;
     flex-wrap: nowrap;
     gap: 4px;
     margin-bottom: 5px;
+    color: #bbcacf;
     padding: 10px;
-    background-color: #bbcacf;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    background-color:#181e21 ;
+    /* box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5); */
 }
 
 .search img {
     box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.5);
+}
+
+.related img {
+    border-radius: 5px;
 }

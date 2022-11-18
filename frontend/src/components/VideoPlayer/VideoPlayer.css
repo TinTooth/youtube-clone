@@ -12,16 +12,18 @@
 }
 
 .video-details {
-    background-color: #bbcacf;
+    background-color: #646b6e;
     padding: 10px;
     margin-bottom: 10px;
     border-bottom: solid 10px #181e21;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+   border-radius: 20px;
 }
 
 .video-details p {
-    font-size: 15px;
+    font-size: 17px;
     padding: 10px;
+    color: #e2e7e9 
     
 }
 
