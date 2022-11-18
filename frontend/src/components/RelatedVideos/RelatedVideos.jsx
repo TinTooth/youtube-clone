@@ -28,7 +28,7 @@ const RelatedVideos = ({vid}) => {
             {relatedVideos.map((item,i)=> {
             return(
               <div className="video-container-related" key = {i}>
-              <VideoCard item = {item} displayType = {2}/>
+                <VideoCard item = {item} displayType = {2}/>
               </div>
           )
         })}

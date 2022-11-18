@@ -10,7 +10,7 @@ const SearchVideo = ({item, displayType}) => {
 
 
     return displayType === 1? (
-        <div onClick={handleClick}>
+        <div onClick={handleClick} className = 'search'>
             <div>
                 <img src={item.snippet.thumbnails.medium.url} alt="thumbnail" />
             </div>

@@ -11,23 +11,21 @@ const Navbar = ({setSearch,search}) => {
 
   return (
     <div className="navBar">
-      <ul>
-        <li className="brand">
+        <div className="brand">
           <Link to="/" style={{ textDecoration: "none", color: "white" }}>
             <b>Youtube Clone</b>
           </Link>
-        </li>
-        <li className="searchbar">
+        </div>
+        <div className="searchbar">
           <SearchBar search = {search} setSearch={setSearch}></SearchBar>
-        </li>
-        <li>
+        </div>
+        <div className="log">
           {user ? (
             <button onClick={logoutUser}>Logout</button>
           ) : (
             <button onClick={() => navigate("/login")}>Login</button>
           )}
-        </li>
-      </ul>
+        </div>
     </div>
   );
 };
