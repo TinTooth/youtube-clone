@@ -2,6 +2,7 @@ import axios from "axios";
 import useConfig from "../../../hooks/useConfig";
 import useCustomForm from "../../../hooks/useCustomForm";
 import useAuth from "../../../hooks/useAuth";
+import "./CommentForm.css"
 
 const CommentForm = ({vid, getVideoComments}) => {
     const config = useConfig()
@@ -31,9 +32,10 @@ const CommentForm = ({vid, getVideoComments}) => {
 
     return ( 
         <div className="comment-form">
+            <h1>COMMENTS</h1>
             <form onSubmit={handleSubmit}>
                 <textarea name = 'comment' value = {formData.comment} onChange ={handleInputChange} />
-                <button>Post</button>
+                <button className="post-btn">Post</button>
             </form>
 
         </div>
