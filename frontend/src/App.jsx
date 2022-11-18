@@ -22,7 +22,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className="page">
       <Navbar search={search} setSearch={setSearch}/>
       <Routes>
         <Route path="/" element={<SearchPage search = {search}/>}/>

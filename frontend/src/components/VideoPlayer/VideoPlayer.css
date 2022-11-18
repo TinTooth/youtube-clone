@@ -1,0 +1,18 @@
+.video-player{
+    width: 1350px
+}
+
+.videos-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px
+}
+
+.video-details p {
+    font-size: 15px;
+    padding: 10px;
+}
+
+iframe {
+    border: none;
+}

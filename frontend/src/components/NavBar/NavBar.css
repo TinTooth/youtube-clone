@@ -9,10 +9,8 @@ li {
 }
 
 .navBar {
-  background: steelblue;
-  box-shadow: 4px 2px 5px gray;
+  background: #2A6A82;
   color: white;
-  margin-bottom: 2rem;
   padding: 1.5rem 2rem;
 }
 

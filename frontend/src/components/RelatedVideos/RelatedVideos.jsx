@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import VideoCard from "../VideoCard/VideoCard.jsx"
 import axios from "axios";
 import "./RelatedVideos.css"
+import ApiKeys from "../../utils/ApiKeys.js";
 
 
 
@@ -16,7 +17,7 @@ const RelatedVideos = ({vid}) => {
     
 
     async function getRelatedVideos() {
-        const response = await axios.get(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&relatedToVideoId=${vid}&type=video&key=AIzaSyCNMgoCmbDb7bKDwy_vmCfV6Vrty8E_0y4` )
+        const response = await axios.get(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&relatedToVideoId=${vid}&type=video&key=${ApiKeys.YOUTUBE_API_KEY}` )
         setRelatedVideos(response.data.items)
         }
     

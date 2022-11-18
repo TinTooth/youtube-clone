@@ -4,3 +4,10 @@
     width: 100%;
     gap:20px
 }
+
+.video-page {
+    width: 80%;
+    background-color: #8ED8F3;
+    margin: auto;
+    padding-top: 20px;
+}

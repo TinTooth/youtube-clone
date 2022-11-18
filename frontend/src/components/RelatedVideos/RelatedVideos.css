@@ -1,5 +1,6 @@
 .video-container-related {
-    background-color: aquamarine;
+    background-color: rgb(180, 184, 182);
     padding: 9px;
     font-size: 15px;
+    gap:10px
 }

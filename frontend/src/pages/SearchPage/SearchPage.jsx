@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 import "./SearchPage.css";
 import VideoCard from '../../components/VideoCard/VideoCard.jsx'
+import ApiKeys from "../../utils/ApiKeys";
 
 
 
@@ -19,7 +20,7 @@ const SearchPage = ({search}) => {
     
 
   async function getSearchResults() {
-    const response = await axios.get(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=9&q=${search}&type=Video&key=AIzaSyCNMgoCmbDb7bKDwy_vmCfV6Vrty8E_0y4`)
+    const response = await axios.get(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=9&q=${search}&type=Video&key=${ApiKeys.YOUTUBE_API_KEY}`)
     setSearchResults(response.data.items)
     }
 
