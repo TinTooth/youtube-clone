@@ -30,7 +30,6 @@ const CommentSection = ({vid}) => {
                     <div className="comment-container" key = {i}>
                         <Comment comment={comment}/>
                     </div>
-
                 )
             })}
         </div>

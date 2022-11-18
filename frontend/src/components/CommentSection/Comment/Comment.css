@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
+    
     padding: 10px;
     border-bottom: 2px solid #646b6e;
     background-color: #181e21;
@@ -11,7 +12,7 @@
     justify-self: left;
     padding-left: 20px;
     color: #9facb0;
-    width :30%;
+    width :20%;
 }
 
 .buttons {
@@ -20,23 +21,32 @@
 }
 
 .reply-btn {
-    justify-self: flex-end;
+    align-self: flex-end;
+    justify-content: center;
     border: 4px solid #181e21 ;
     font-size: 15px;
     font-weight: bold;
     padding: 3px;
     width: auto;
+    height: 30px;
 }
 
 .text {
     padding: 5px;
     padding-left: 50px;
     color:#bbcacf;
+    
 }
 
 .content {
     display: flex;
     flex-wrap: nowrap;
+    /* align-items: center; */
     width: 70%;
     justify-content: space-between;
+}
+
+.comment-container {
+    display: flex;
+    flex-wrap: wrap;
 }
