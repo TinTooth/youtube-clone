@@ -23,6 +23,7 @@
     font-size: 25px;
     border-radius: 15px;
     cursor: pointer;
+    align-self: flex-end;
 }
 
 .post-btn:hover {

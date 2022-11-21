@@ -1,0 +1,31 @@
+.reply-form {
+    
+    background-color:#181e21  ;
+    padding: 10px;
+    border-left: 1px solid #646b6e;
+    border-right: 1px solid #646b6e;
+    border-bottom: 1px solid #646b6e;
+    padding-top: 10px;
+    padding-left: 50px;
+
+}
+
+
+.reply-form textarea {
+    width :600px;
+    max-width: 600px;
+    min-width: 600px;
+    min-height: 45px;
+    max-height: 200px;
+    height: 45px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 18px;
+    margin-right: 45px;
+}
+
+.reply-form-btn {
+    height: 45px;
+    align-self: flex-end;
+}
+

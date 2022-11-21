@@ -1,4 +1,4 @@
-import { useContext,useEffect,useState } from 'react';
+import { useContext,useState } from 'react';
 import './Comment.css';
 import AuthContext from '../../../context/AuthContext';
 import ReplySection from '../../ReplyComponents/ReplySection/ReplySection';
@@ -26,7 +26,7 @@ const Comment = ({comment}) => {
                 <div className='content'>
                     <div className='text'> {comment.text}</div>
                     <div className='buttons'>
-                        { user ? (<button className='reply-btn' onClick={handleClick}>{replyButton}</button>): <div className='text'> Login to See Replies</div>}
+                        { user ? (<button className='reply-btn' onClick={handleClick}>{replyButton}</button>): <div> Login to See Replies</div>}
                     </div>
                 </div>
             </div>

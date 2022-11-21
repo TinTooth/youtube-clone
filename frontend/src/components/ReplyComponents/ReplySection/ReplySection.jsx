@@ -13,7 +13,7 @@ const ReplySection = ({showReplies, commentId}) => {
     
 
     useEffect (()=> {
-        getReplies()
+        if (user) {getReplies()}
     },[showReplies])
     
 
@@ -21,7 +21,7 @@ const ReplySection = ({showReplies, commentId}) => {
     async function getReplies() {
         console.log(commentId);
         let response = await axios.get(`http://127.0.0.1:8000/api/replies/${commentId}/`,config)
-        if (response.status == 200){
+        if (response.status === 200){
             setReplies(response.data);
         }
     }
@@ -29,7 +29,6 @@ const ReplySection = ({showReplies, commentId}) => {
 
     return showReplies ? ( 
         <div className="reply-section">
-            <ReplyForm commentId={commentId} show = {true} getReplies = {getReplies}/>
             <div className="replies-list">
                 {replies.map((reply, i) => {
                     return(
@@ -39,6 +38,7 @@ const ReplySection = ({showReplies, commentId}) => {
                     )    
                 })}
             </div>
+            <ReplyForm commentId={commentId} show = {true} getReplies = {getReplies}/>
         </div>
      ):null;
 }

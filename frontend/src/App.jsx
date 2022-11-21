@@ -1,7 +1,7 @@
 // General Imports
 import { Routes, Route } from "react-router-dom";
-import React, { useState, useEffect } from 'react';
-import axios from "axios";
+import React, { useState} from 'react';
+import Footer from "./components/Footer/Footer";
 import VideoPage from "./pages/VideoPage/VideoPage";
 
 import "./App.css";
@@ -14,7 +14,6 @@ import SearchPage from "./pages/SearchPage/SearchPage";
 import Navbar from "./components/NavBar/NavBar";
 
 // Util Imports
-import PrivateRoute from "./utils/PrivateRoute";
 
 function App() {
   const [search,setSearch] = useState('decorating cookies')
@@ -30,6 +29,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/video/:vid" element = {<VideoPage />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }

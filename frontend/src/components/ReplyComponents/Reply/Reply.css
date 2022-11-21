@@ -1,0 +1,22 @@
+.reply {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.spacer{
+    width: 70px
+}
+
+.text {
+    width: 750px;
+    word-wrap: break-word;
+    text-align: start;
+    
+}
+
+.reply-username{
+    color: #181e21;
+}

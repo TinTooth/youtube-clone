@@ -23,7 +23,7 @@ const Navbar = ({setSearch,search}) => {
           {user ? (
             <button onClick={logoutUser}>Logout</button>
           ) : (
-            <button onClick={() => navigate("/login")}>Login</button>
+            <button onClick={() => navigate("/login") }>Login</button>
           )}
         </div>
     </div>

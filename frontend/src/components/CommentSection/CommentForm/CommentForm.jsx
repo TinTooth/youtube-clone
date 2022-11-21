@@ -6,7 +6,7 @@ import "./CommentForm.css"
 
 const CommentForm = ({vid, getVideoComments}) => {
     const config = useConfig();
-    const [user,token] = useAuth();
+    const [user] = useAuth();
     const [formData, handleInputChange, handleSubmit] = useCustomForm({comment:''},createComment);
     
 
@@ -23,7 +23,7 @@ const CommentForm = ({vid, getVideoComments}) => {
     async function postComment(newComment) {
     
         let response = await axios.post('http://127.0.0.1:8000/api/comments/',newComment, config)
-        if (response.status == 201){
+        if (response.status === 201){
             getVideoComments();
         }  
     }

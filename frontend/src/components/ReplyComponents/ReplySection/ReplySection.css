@@ -3,3 +3,8 @@
     background-color: #646b6e;
     text-align: center;
 }
+
+.reply-container{
+    padding: 5px;
+    border-bottom: 1px solid #181e21;
+}

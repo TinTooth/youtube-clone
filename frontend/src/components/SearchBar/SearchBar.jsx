@@ -6,7 +6,7 @@ const SearchBar = ({setSearch}) => {
     const navigate = useNavigate()
     const submitSearch = (data) => {
         setSearch(data.search);
-        navigate('/')
+        navigate('/');
     }
     
     const [formData, handleInputChange, handleSubmit] = useCustomForm({search:''},submitSearch);
