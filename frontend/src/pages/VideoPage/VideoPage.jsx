@@ -12,7 +12,7 @@ const VideoPage = () => {
     const [currentVideo,setCurrentVideo] = useState({})
 
     useEffect(()=> {
-        getVideoDetails()
+        // getVideoDetails()
     },[vid])
 
     async function getVideoDetails() {
@@ -25,7 +25,7 @@ const VideoPage = () => {
         <div className="video-page">
             <div className="video-container-player">
                 <div>
-                    <VideoPlayer vid = {vid} currentVideo = {currentVideo} />
+                    {/* <VideoPlayer vid = {vid} currentVideo = {currentVideo} /> */}
                 </div>
             </div>
             <CommentSection vid = {vid}/>

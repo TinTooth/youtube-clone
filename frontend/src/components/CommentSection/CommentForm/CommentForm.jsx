@@ -5,8 +5,8 @@ import useAuth from "../../../hooks/useAuth";
 import "./CommentForm.css"
 
 const CommentForm = ({vid, getVideoComments}) => {
-    const config = useConfig()
-    const [user,token] = useAuth()
+    const config = useConfig();
+    const [user,token] = useAuth();
     const [formData, handleInputChange, handleSubmit] = useCustomForm({comment:''},createComment);
     
 
@@ -34,8 +34,6 @@ const CommentForm = ({vid, getVideoComments}) => {
         <div className="comment-form">
             <h1>COMMENTS</h1>
             { user ? (
-
-                
                 <form onSubmit={handleSubmit}>
                 <textarea name = 'comment' value = {formData.comment} onChange ={handleInputChange} />
                 <button className="post-btn">Post</button>
