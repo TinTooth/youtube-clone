@@ -11,13 +11,12 @@ const ReplySection = ({showReplies, commentId}) => {
     const [replies, setReplies] = useState([]);
     const config = useConfig();
     
-
     useEffect (()=> {
         if (user) {getReplies()}
     },[showReplies])
+    // Didnt want showReplies here, since everytime you click the show replies button it makes a request to the backend.
+    // But I was getting an error where on the first mount, the first commentId would be undefined but would be defined on on the following requests. I couldnt figure it out.
     
-
-
     async function getReplies() {
         console.log(commentId);
         let response = await axios.get(`http://127.0.0.1:8000/api/replies/${commentId}/`,config)
