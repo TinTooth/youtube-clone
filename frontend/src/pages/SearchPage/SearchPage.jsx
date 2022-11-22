@@ -25,7 +25,6 @@ const SearchPage = ({search}) => {
               <div className="video-container" key = {i}>
               <VideoCard item = {item} displayType = {1}/>
               </div>
-            
           )
         })}
       </div>

@@ -15,7 +15,7 @@ const ReplySection = ({showReplies, commentId}) => {
         if (user) {getReplies()}
     },[showReplies])
     // Didnt want showReplies here, since everytime you click the show replies button it makes a request to the backend.
-    // But I was getting an error where on the first mount, the first commentId would be undefined but would be defined on on the following requests. I couldnt figure it out.
+    // But I was getting an error where on the first mount, just the first commentId would be undefined but would be defined on on the following requests. I couldnt figure it out.
     
     async function getReplies() {
         console.log(commentId);
